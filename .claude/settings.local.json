@@ -26,7 +26,10 @@
       "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.AfterAttribute\")",
       "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.HookAttribute\")",
       "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.ITestExecution\")",
-      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\")"
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\")",
+      "Bash(dotnet build -c \"Debug 2026\")",
+      "Bash(dotnet build -c \"Debug 2025\")",
+      "Bash(dotnet build -c \"Release 2026\")"
     ]
   }
 }
