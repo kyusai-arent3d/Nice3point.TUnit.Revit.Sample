@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.nuget.org)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(dotnet build)",
+      "Bash(dotnet tool list -g)",
+      "Bash(where ilspycmd)",
+      "Bash(powershell -Command \":*)",
+      "Bash(powershell -File:*)",
+      "WebFetch(domain:tunit.dev)",
+      "Bash(dotnet tool install --global ilspycmd)",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\nice3point.tunit.revit\\\\2026.0.4\\\\lib\\\\net8.0-windows7.0\\\\Nice3point.TUnit.Revit.dll\" -t \"Nice3point.TUnit.Revit.RevitApiTest\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\nice3point.tunit.revit\\\\2026.0.4\\\\lib\\\\net8.0-windows7.0\\\\Nice3point.TUnit.Revit.dll\" -t \"Nice3point.TUnit.Revit.RevitApplicationTest\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\nice3point.tunit.revit\\\\2026.0.4\\\\lib\\\\net8.0-windows7.0\\\\Nice3point.TUnit.Revit.dll\" --list-types)",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\nice3point.tunit.revit\\\\2026.0.4\\\\lib\\\\net8.0-windows7.0\\\\Nice3point.TUnit.Revit.dll\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\nice3point.tunit.revit\\\\2026.0.4\\\\lib\\\\net8.0-windows7.0\\\\Nice3point.TUnit.Revit.dll\" -t \"Nice3point.Revit.Injector.Injector\")",
+      "Bash(grep -A 60 \"namespace \\\\\\\\u00a0\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.TestSessionContext\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.TestContext\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.TestResult\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.TestState\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.engine\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Engine.dll\" -t \"TUnit.Engine.Services.HooksCollector\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.engine\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Engine.dll\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.AfterAttribute\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.HookAttribute\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\" -t \"TUnit.Core.ITestExecution\")",
+      "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\")"
+    ]
+  }
+}
