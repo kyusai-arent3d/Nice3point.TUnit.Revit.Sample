@@ -1,7 +1,5 @@
 using Autodesk.Revit.DB;
-using Nice3point.TUnit.Revit;
 using Nice3point.TUnit.Revit.Executors;
-using TUnit.Core;
 using TUnit.Core.Executors;
 
 namespace RevitTests;
@@ -9,7 +7,7 @@ namespace RevitTests;
 /// <summary>
 /// Revit Application レベルの動作を検証するテストクラス。
 /// </summary>
-public sealed class RevitApplicationTests : RevitApiTest
+public sealed class RevitApplicationTests : RevitTestBase
 {
     /// <summary>
     /// アプリケーション起動時に都市リストが空でないことを確認する。

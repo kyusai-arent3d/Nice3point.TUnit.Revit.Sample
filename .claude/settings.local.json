@@ -29,7 +29,9 @@
       "Bash(ilspycmd \"C:\\\\Users\\\\KyusaiSeiya\\\\.nuget\\\\packages\\\\tunit.core\\\\1.12.111\\\\lib\\\\net8.0\\\\TUnit.Core.dll\")",
       "Bash(dotnet build -c \"Debug 2026\")",
       "Bash(dotnet build -c \"Debug 2025\")",
-      "Bash(dotnet build -c \"Release 2026\")"
+      "Bash(dotnet build -c \"Release 2026\")",
+      "Bash(ilspycmd \"C:/Users/KyusaiSeiya/.nuget/packages/nice3point.tunit.revit/2026.0.4/lib/net8.0-windows7.0/Nice3point.TUnit.Revit.dll\")",
+      "Bash(dotnet build -c \"Debug.2026\" -p:RevitVersion=2026)"
     ]
   }
 }
