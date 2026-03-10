@@ -1,4 +1,5 @@
 using Autodesk.Revit.DB;
+using Nice3point.TUnit.Revit;
 using Nice3point.TUnit.Revit.Executors;
 using TUnit.Core.Executors;
 
@@ -8,7 +9,7 @@ namespace RevitTests;
 /// Revit Document レベルの操作を検証するテストクラス。
 /// クラス単位でドキュメントを開き、テスト後に閉じる。
 /// </summary>
-public sealed class RevitDocumentTests : RevitTestBase
+public sealed class RevitDocumentTests : RevitApiTest
 {
     private static Document _documentFile = null!;
 
