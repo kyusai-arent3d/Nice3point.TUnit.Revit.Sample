@@ -1,8 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="../CommonProjectProperties.prop" />
 
-  <ItemGroup>
+  <PropertyGroup>
+	  <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+	<ItemGroup>
     <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitApiPackageVersion)" />
     <PackageReference Include="Nice3point.Revit.Toolkit" Version="$(RevitToolkitPackageVersion)" />
     <PackageReference Include="Nice3point.TUnit.Revit" Version="$(TUnitRevitPackageVersion)" />

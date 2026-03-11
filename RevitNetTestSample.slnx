@@ -1,9 +1,9 @@
 <Solution>
   <Configurations>
-    <BuildType Name="Debug 2025" />
-    <BuildType Name="Debug 2026" />
-    <BuildType Name="Release 2025" />
-    <BuildType Name="Release 2026" />
+    <BuildType Name="Debug2025" />
+    <BuildType Name="Debug2026" />
+    <BuildType Name="Release2025" />
+    <BuildType Name="Release2026" />
     <Platform Name="x64" />
   </Configurations>
   <Project Path="RevitTests/RevitTests.csproj">

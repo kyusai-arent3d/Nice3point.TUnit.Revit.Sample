@@ -1,13 +1,13 @@
 <Project>
 
     <!-- ========================================================
-         ビルド設定: "Debug 2025" / "Release 2026" のように
+         ビルド設定: "Debug2025" / "Release2026" のように
          「{Debug|Release} {RevitVersion}」の形式で Configuration を指定する。
-         CLI 例: dotnet run -c "Debug 2026"
+         CLI 例: dotnet run -c "Debug2026"
          ======================================================== -->
 
     <PropertyGroup>
-        <Configurations>Debug 2025;Release 2025;Debug 2026;Release 2026</Configurations>
+        <Configurations>Debug2025;Release2025;Debug2026;Release2026</Configurations>
         <Platforms>x64</Platforms>
         <PlatformTarget>x64</PlatformTarget>
         <LangVersion>12</LangVersion>
@@ -19,7 +19,7 @@
 
     <!-- ConfigMode: Debug / Release -->
     <Choose>
-        <When Condition=" $(Configuration.StartsWith('Debug ')) ">
+        <When Condition=" $(Configuration.StartsWith('Debug')) ">
             <PropertyGroup>
                 <ConfigMode>Debug</ConfigMode>
             </PropertyGroup>
@@ -33,17 +33,17 @@
 
     <!-- RevitVersion / TargetFramework / NuGet パッケージバージョン -->
     <Choose>
-        <When Condition=" $(Configuration.EndsWith(' 2025')) ">
+        <When Condition=" $(Configuration.EndsWith('2025')) ">
             <PropertyGroup>
                 <RevitVersion>2025</RevitVersion>
                 <TargetFramework>net8.0-windows</TargetFramework>
-                <!-- バージョン固定が必要な場合は 2025.x.x に変更すること -->
+                <!-- バージョン固定が必要な場合は2025.x.x に変更すること -->
                 <RevitApiPackageVersion>2025.*</RevitApiPackageVersion>
                 <RevitToolkitPackageVersion>2025.*</RevitToolkitPackageVersion>
                 <TUnitRevitPackageVersion>2025.*</TUnitRevitPackageVersion>
             </PropertyGroup>
         </When>
-        <When Condition=" $(Configuration.EndsWith(' 2026')) ">
+        <When Condition=" $(Configuration.EndsWith('2026')) ">
             <PropertyGroup>
                 <RevitVersion>2026</RevitVersion>
                 <TargetFramework>net8.0-windows</TargetFramework>
@@ -53,7 +53,7 @@
             </PropertyGroup>
         </When>
         <Otherwise>
-            <!-- Configuration 未指定のデフォルト: Debug 2026 相当 -->
+            <!-- Configuration 未指定のデフォルト: Debug2026 相当 -->
             <PropertyGroup>
                 <RevitVersion>2026</RevitVersion>
                 <TargetFramework>net8.0-windows</TargetFramework>
@@ -74,15 +74,8 @@
     <PropertyGroup>
         <DefineConstants>$(DefineConstants);REVIT$(RevitVersion)</DefineConstants>
     </PropertyGroup>
-    <PropertyGroup Condition=" 2026 &lt;= $(RevitVersion) ">
+    <PropertyGroup Condition="2026 &lt;= $(RevitVersion) ">
         <DefineConstants>$(DefineConstants);REVIT2026_OR_GREATER</DefineConstants>
     </PropertyGroup>
-
-    <!--
-        リビルド前に残留プロセスを終了して出力 DLL のロックを解除する（安全策）。
-    -->
-    <Target Name="KillLingeringRevitTestProcess" BeforeTargets="Rebuild">
-        <Exec Command="taskkill /F /IM $(AssemblyName).exe 2&gt;nul" IgnoreExitCode="true" />
-    </Target>
 
 </Project>
